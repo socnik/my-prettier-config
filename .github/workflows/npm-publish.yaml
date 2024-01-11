@@ -1,0 +1,24 @@
+name: Npm Package Publish
+run-name: Publish to Npm registry started!
+on:
+  release:
+    types: [released]
+jobs:
+  publish:
+    runs-on: ubunut-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.0.0'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v2.4.0
+      - name: Install dependencies
+        run: pnpm ci
+      - name: Publish!
+        run: pnpm publish --scope=@socnik
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
