@@ -1,5 +1,5 @@
 {
-  "name": "my-prettier-config",
+  "name": "@socnik/my-prettier-config",
   "version": "0.0.0",
   "description": "This is my favorite prettier config for my projects.",
   "main": ".prettierrc.json",
