@@ -1,6 +1,6 @@
 {
   "name": "@socnik/my-prettier-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is my favorite prettier config for my projects.",
   "main": ".prettierrc.json",
   "scripts": {
