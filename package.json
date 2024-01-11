@@ -15,7 +15,8 @@
     "url": "git+https://github.com/socnik/my-prettier-config.git"
   },
   "keywords": [
-    "prettier"
+    "prettier",
+    "prettier-config"
   ],
   "author": "Nikita Sokolov",
   "license": "MIT",
