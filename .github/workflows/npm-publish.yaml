@@ -19,6 +19,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Publish!
-        run: pnpm publish --scope=@socnik
+        run: pnpm publish @socnik/my-prettier-config --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
