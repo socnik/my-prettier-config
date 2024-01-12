@@ -1,8 +1,13 @@
 # My Prettier Config
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-wide-dark.svg" alt="Prettier Banner">
-</p>
+<a src="https://github.com/prettier">
+  <p align="center">
+    <img
+      src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-wide-dark.svg"
+      alt="Prettier Banner"
+    >
+  </p>
+</a>
 
 This is my favorite prettier config for my projects.
 
