@@ -1,5 +1,7 @@
 # My Prettier Config
 
+[![Prettier Banner](https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-wide-dark.svg)](https://github.com/prettier)
+
 This is my favorite prettier config for my projects.
 
 ## Usage
