@@ -1,5 +1,5 @@
 name: Npm Package Publish
-run-name: Publish to Npm registry started!
+run-name: Npm Package Publish
 on:
   release:
     types: [released]
