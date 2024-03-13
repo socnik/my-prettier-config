@@ -17,8 +17,8 @@ You can see [official Prettier docs](https://prettier.io/docs/en/configuration#s
 
 ### 1. Install `@socnik/my-prettier-config` package
 
-- **Npm:** `npm i --dev @socnik/my-prettier-config`
-- **Pnpm:** `pnpm add -D @socnik/my-prettier-config`
+- **Npm:** `npm i --dev prettier @socnik/my-prettier-config`
+- **Pnpm:** `pnpm add -D prettier @socnik/my-prettier-config`
 
 ### 2. Add config to your `package.json`
 
