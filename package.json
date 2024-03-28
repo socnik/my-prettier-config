@@ -1,16 +1,13 @@
 {
   "name": "@socnik/my-prettier-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This is my favorite prettier config for my projects.",
   "main": ".prettierrc.json",
   "scripts": {
     "format": "pnpm exec prettier --write --config .prettierrc.json . "
   },
   "packageManager": "pnpm@8.10.5",
-  "files": [
-    "README.md",
-    "LICENSE"
-  ],
+  "files": ["README.md", "LICENSE"],
   "publishConfig": {
     "access": "public"
   },
@@ -18,10 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/socnik/my-prettier-config.git"
   },
-  "keywords": [
-    "prettier",
-    "prettier-config"
-  ],
+  "keywords": ["prettier", "prettier-config"],
   "author": "Nikita Sokolov",
   "license": "MIT",
   "bugs": {
