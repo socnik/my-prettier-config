@@ -9,12 +9,6 @@
    </p>
 </a>
 
-## ⚠️ Deprecated ⚠️
-
-Moved to [@socnik/ts-kit](https://github.com/socnik/ts-kit/tree/main/packages/my-prettier-config) monorepo.
-
----
-
 This is my favorite prettier config for my projects.
 
 ## Usage
