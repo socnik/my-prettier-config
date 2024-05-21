@@ -9,50 +9,107 @@
    </p>
 </a>
 
-This is my favorite prettier config for my projects.
+My preferred [Prettier config](https://prettier.io) which i use between my projects.
+
+I recommend using this config with my [Editoconfig template](https://github.com/socnik/my-editorconfig). They are fully compatible between themselves.
+
+This config is in the [`.prettierrc.json`](https://github.com/socnik/my-prettier-config/tree/main/.prettierrc.json) file.
 
 ## Usage
 
-You can see [official Prettier docs](https://prettier.io/docs/en/configuration#sharing-configurations) or follow this steps:
+### Stage 0
 
-### 1. Install `@socnik/my-prettier-config` package
+Install `prettier` and `@socnik/my-prettier-config` packages:
 
-- **Npm:** `npm i --dev prettier @socnik/my-prettier-config`
-- **Pnpm:** `pnpm add -D prettier @socnik/my-prettier-config`
+```shell
+npx nypm add -D prettier @socnik/my-prettier-config
+```
 
-### 2. Add config to your `package.json`
+### Stage 1
 
-```json
+Add config to your `package.json`:
+
+```jsonc
+// package.json
+
 {
   "name": "my-cool-library",
   "version": "9000.0.1",
-  "prettier": "@socnik/my-prettier-config" // <- Add this line
+  // ...
+  "prettier": "@socnik/my-prettier-config", // <- Add this line
 }
 ```
 
-### 3. Enjoy 🚀!
+### Stage 2 _(Optional)_
 
-## Config content
+Install [`Prettier` VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) from marketplace.
 
-Config contents in [`.prettierrc.json`](https://github.com/socnik/my-prettier-config/blob/main/.prettierrc.json) file.
+### Stage 3
 
-```yaml
-arrowParens: always,
-bracketSameLine: false,
-bracketSpacing: true,
-cursorOffset: -1,
-embeddedLanguageFormatting: auto,
-endOfLine: lf,
-htmlWhitespaceSensitivity: "css",
-jsxSingleQuote: true,
-printWidth: 80,
-proseWrap: preserve,
-quoteProps: as-needed,
-semi: false,
-singleAttributePerLine: true,
-singleQuote: true,
-tabWidth: 2,
-useTabs: false,
-trailingComma: es5,
-vueIndentScriptAndStyle: false
+Add your package manager lockfile to `.prettierignore`:
+
+```ignore
+# .prettierignore
+
+# Pnpm
+pnpm-lock.yaml
+
+# Npm
+package-lock.json
 ```
+
+### Stage 4a _(optional)_
+
+Setup VSCode environment with workspace configuration:
+
+```jsonc
+// .vscode/extensions.json
+
+{
+  "recommendations": [
+    // ...
+    "esbenp.prettier-vscode",
+    // ...
+  ],
+}
+```
+
+```jsonc
+// .vscode/settings.json
+
+{
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+}
+```
+
+### Stage 4b _(optional)_
+
+Setup VSCode environment with [`Devcontainer configuration`](https://code.visualstudio.com/docs/devcontainers/containers):
+
+```jsonc
+// .devcontainer/devcontainer.json
+
+{
+  // ...
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Prettier
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+      },
+      "extensions": ["esbenp.prettier-vscode"],
+    },
+  },
+}
+```
+
+### Stage 5 _(optional)_
+
+Setup Editorconfig with my config. If you want to do it, follow the instructions in [socnik/my-editorconfig](https://github.com/socnik/my-editorconfig#readme) repository.
+
+### Stage 6
+
+Enjoy 🚀!
