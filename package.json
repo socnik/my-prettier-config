@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/socnik/ts-kit"
+    "url": "git+https://github.com/socnik/my-prettier-config"
   },
-  "homepage": "git+https://github.com/socnik/ts-kit/tree/main/packages/my-prettier-config#readme",
+  "homepage": "git+https://github.com/socnik/my-prettier-config#readme",
   "bugs": {
-    "url": "https://github.com/socnik/ts-kit/issues"
+    "url": "https://github.com/socnik/my-prettier-config/issues"
   },
   "engines": {
     "node": ">=20.0.0"
